@@ -19,7 +19,7 @@
 
 ### 详细步骤
 
-#### 方案一：使用 Conda（推荐）
+#### 使用 Conda（推荐）
 ```bash
 # 创建专属虚拟环境
 conda create -n resume python=3.9
