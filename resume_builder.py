@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 import sys
 from PyQt6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
                              QLabel, QLineEdit, QTextEdit, QPushButton, QComboBox,
@@ -59,7 +58,7 @@ class PDF(FPDF):
             self.multi_cell(w, h, txt, border, align, fill)
         else:
             print(f"警告: 中文字体未加载，尝试输出多行文本: {txt[:30]}...")
-            self.multi_cell(w, h, txt, border, align, fill) # 尝试输出
+            self.multi_cell(w, h, txt, border, align, fill)
 
     def cell_chinese(self, w, h=0, txt="", border=0, ln=0, align="", fill=False, link=""):
          """支持中文的 cell"""
@@ -67,7 +66,7 @@ class PDF(FPDF):
              self.cell(w, h, txt, border, ln, align, fill, link)
          else:
             print(f"警告: 中文字体未加载，尝试输出单元格文本: {txt[:30]}...")
-            self.cell(w, h, txt, border, ln, align, fill, link) # 尝试输出
+            self.cell(w, h, txt, border, ln, align, fill, link)
 
 
 class ResumeApp(QMainWindow):
